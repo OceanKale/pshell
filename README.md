@@ -1,3 +1,3 @@
 # pshell
 
-Repo with all old PS
+Repo with some old PS scripts
