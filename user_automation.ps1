@@ -1,6 +1,6 @@
-﻿### Written and maintained by Jason Eckhart (jeckhart@lifewatch.com), includes some legacy contributions from Eric Sanders
+### Written and maintained by whisker rebellion
 
-### HolterScript is divided into 1+3+1 sections: this introductory section followed by the 3 body sections based on the required process for Holter report monitoring, and a cleanup section. The body sections deal with
+### Script is divided into 1+3+1 sections: this introductory section followed by the 3 body sections based on the required process for Holter report monitoring, and a cleanup section. The body sections deal with
 ### the following, including external software:
 ### Rozinnator, which combines the raw received files; 
 ### Rozinn, which combines those files into manipulable data, and allows technicians to view that data; 
