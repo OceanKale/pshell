@@ -1,6 +1,4 @@
 ### Receiver controller
-### To use, ensure that the file extension is .ps1; right-click the file and select "Run with Powershell" OR 
-###open command prompt, type "powershell" and press enter, then type the path to this file
 
 $portname = [System.IO.Ports.SerialPort]::getportnames()
 $port= new-Object System.IO.Ports.SerialPort $portname,9600,None,8,one
