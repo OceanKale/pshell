@@ -1,5 +1,4 @@
 # local cleanup
-# at least twice a week should remove the India q/a .pdfs from c:\rozinnpatdata, .scps from c:\rozinn\h4w\files, .res/.ini from c:\rozinnpatdata\old (if any) and from c:\lifewatch holter data (if any)
 
 #try{robocopy "c:\rozinnpatdata" "\\lwi.com\dfs\PATIENT\ARCHIVE\REPORTS\USA\ACTEX\India\PDF" "*.pdf"; remove-item -whatif "c:\rozinnpatdata\old\*.pdf";} catch{write-host "Couldn't copy/delete pdfs"}
 try{copy-item -whatif "c:\rozinnpatdata\*.pdf" "\\lwi.com\dfs\PATIENT\ARCHIVE\REPORTS\USA\ACTEX\India\PDF"; remove-item -whatif "c:\rozinnpatdata\old\*.pdf";} catch{write-host "Couldn't copy/delete pdfs"}
