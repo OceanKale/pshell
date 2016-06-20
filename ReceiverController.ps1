@@ -1,4 +1,5 @@
 ### Receiver controller
+### Works on Rotel RSX1055 receivers. Requires RS232 port (virtual or physical) to be connected
 
 $portname = [System.IO.Ports.SerialPort]::getportnames()
 $port= new-Object System.IO.Ports.SerialPort $portname,9600,None,8,one
