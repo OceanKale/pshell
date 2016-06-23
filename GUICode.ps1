@@ -79,11 +79,11 @@ write-host($ServicesAffectedDropDown.SelectedItem.ToString())
 <#
 ===================
 Subject: ISSUE - START - 2014/10/10 12:44
-Services Affected: LWConnect
+Services Affected: ____
 Severity: High
 Issue Start Time: 2014/10/10 22:00
 ETA: Resolved within 10 minutes
-Call No: (US/CH/ISR dial-in) + 888-619-4242
-JIRA Ticket: SU-1008
+Call No: (US/CH/ISR dial-in) + phone
+JIRA Ticket: SU-
 ===================
 #>
