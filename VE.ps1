@@ -1,4 +1,5 @@
-## Initializes synth, then proceeds to repeat indefinitely while writing $word ad infinitum (can also have it open picture[s] indefinitely)
+## Initializes synth, then proceeds to repeat indefinitely while writing $word ad infinitum 
+## (can also have it open picture[s] indefinitely) by uncommenting the invoke-item
 
 add-type -assemblyname system.speech 
 $x = 1
