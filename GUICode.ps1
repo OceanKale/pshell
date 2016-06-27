@@ -2,8 +2,7 @@
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Drawing") 
 [void] [System.Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms") 
 
-[array]$ServicesAffected = "LWConnect", "Phones", "PaceArt", "SoftAid", "CosmoCom", "Corn"
-[array]$
+[array]$ServicesAffected = "stuff","Corn"
 
 #### FORM CREATION
 $objForm = New-Object System.Windows.Forms.Form 
