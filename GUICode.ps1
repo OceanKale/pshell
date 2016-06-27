@@ -77,7 +77,7 @@ write-host($ServicesAffectedDropDown.SelectedItem.ToString())
 
 <#
 ===================
-Subject: ISSUE - START - 2014/10/10 12:44
+Subject: ISSUE - START - YYYY/MM/DD HH:MM
 Services Affected: ____
 Severity: High
 Issue Start Time: 2014/10/10 22:00
