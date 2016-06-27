@@ -2,4 +2,4 @@
 
 Dumping ground storage repo with some old PS scripts
 
-to be uploaded: RS232 receiver
+to be uploaded: chat, regex file scan
