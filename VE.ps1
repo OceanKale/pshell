@@ -2,11 +2,13 @@
 ## (can also have it open picture[s] indefinitely) by uncommenting the invoke-item
 
 add-type -assemblyname system.speech 
+
 $x = 1
-$word = oily
+$word = "oily"
 $wshell = new-object -comobject wscript.shell;
 $synth = new-object -typename system.speech.synthesis.speechsynthesizer
-$synth.rate = 7 ### repeat rate
+$synth.rate = 7 ### rate at which the word/sound will repeat
+
 do{
 	write-host -nonewline $word
 	$synth.speak($word)
