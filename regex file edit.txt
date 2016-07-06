@@ -1,5 +1,0 @@
-### get-content
-### select-string c:\dir\ -pattern "corn" (to non-destructively search for pattern)
-
-
-(get-content -path "c:\users\corm\desktop\test\*.837") | foreach-object {$_ -replace "\*BK:", "PIZZA"} | set-content -path "c:\users\corm\desktop\test\*.837"
