@@ -5,4 +5,4 @@ $ToBeReplaced = "\*BK:" ## need to escape wildcard
 $ReplaceWith = "PIZZA"
 
 
-(get-content -path $FileDir) | foreach-object {$_ -replace "\*BK:", "PIZZA"} | set-content -path $FileDir
+(get-content -path $FileDir) | foreach-object {$_ -replace $ToBeReplaced, $ReplaceWith} | set-content -path $FileDir
