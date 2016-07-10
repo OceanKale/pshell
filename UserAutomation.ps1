@@ -23,9 +23,7 @@ Write-Host ""
 
 #self-updater; put latest script in this dir
 $latestScriptDir = ""
-
 $localScriptDir = "C:\Scripts"
-
 $latestVersion = Get-Content "$latestScriptDir\LatestVersion.txt"
 
 #cleaning up old versions' files
@@ -73,14 +71,14 @@ Function Press-Tab($numberOfTabs){
 
 try{
 
-$rozinnatorPath = "C:\Program Files (x86)\ACTRozinator\ACTRozinnator.exe" #Opens Rozinnator, uses default install directory
+$rozPath = "C:\Program Files (x86)\" # uses default install directory
 $winShell = New-Object -ComObject wscript.shell;
 $user = $env:USERNAME
 $receivedFilesPath = ""
 
 
 
-Write-Host "Press any key to begin ACTRozinnator"
+Write-Host "Press any key to begin"
 $waitForInput = $host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
 
 [string]$patID = Read-Host "What is the Patient ID?"
@@ -116,7 +114,7 @@ else{
 
 }
 
-Invoke-Item $rozinnatorPath
+Invoke-Item $rozPath
 $fulllocation = $receivedFilesPath + $patID + ".$user" + ".working"
 Sleep 1
 
@@ -139,7 +137,7 @@ $winShell.SendKeys('{DOWN}')
 $winShell.SendKeys('{DOWN}') #Lifestar ACT 3
 Sleep 1
 
-$winShell.AppActivate("ACT Rozinnator")
+$winShell.AppActivate("Roz")
 Press-Tab(11)
 $winShell.SendKeys('{LEFT}')
 $winShell.SendKeys("$fulllocation")
@@ -217,7 +215,7 @@ Press-Tab(4)
 Sleep 1
 $winShell.SendKeys('{DOWN}')
 $winShell.SendKeys('{DOWN}')
-$winShell.SendKeys('{DOWN}')#goes down to LW in settings dropdown
+$winShell.SendKeys('{DOWN}')
 $winShell.SendKeys('{DOWN}')
 $winShell.SendKeys('{DOWN}')
 
@@ -229,12 +227,7 @@ Press-Tab(9)
 $winShell.SendKeys(" ")
 
 $winShell.PopUp("Click OK when Rozinn has finished loading the data...", 0, "Is Rozinn Done?")
-sleep 1
-#still need the 19 tabs
-Press-Tab(19)
-sleep 1
 $winShell.SendKeys("$userID")
-Sleep 2
 
 Sleep 7 #so as not to instantly ask for report
 
